@@ -16,9 +16,6 @@ for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
 if prompt := st.chat_input():
-    if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
-        st.stop()
     openai.api_base = 'https://api.openai-proxy.org/v1'
     openai.api_key = 'sk-yE9AUncq99czee9GsytQYP4QxYuZal44kPMx5y9rkqojGVu3'
     st.session_state.messages.append({"role": "user", "content": prompt})
