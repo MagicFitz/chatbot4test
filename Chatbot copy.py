@@ -2,7 +2,6 @@ import openai
 import streamlit as st
 import FAISS
 import os
-import json
 import pandas as pd
 '''with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
