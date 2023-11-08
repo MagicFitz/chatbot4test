@@ -2,7 +2,6 @@ import openai
 import streamlit as st
 import requests
 import json
-
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.prompts import SystemMessagePromptTemplate, HumanMessagePromptTemplate, ChatPromptTemplate
