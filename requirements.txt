@@ -7,3 +7,5 @@ trubrics>=1.4.3
 streamlit-feedback
 json
 requests
+FAISS
+pandas
